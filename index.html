@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<style>
+    #container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        width: 450px;
+        height: 300px;
+        padding: 20px;
+        transform: translate(-50%,-50%);
+        display: inline-flex;
+        background-color: transparent;
+        justify-content: center;
+
+
+    }
+    #selection{
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        margin-right: -50%;
+        width: 200px;
+        height: 20px;
+        padding: 20px;
+        transform: translate(-50%,-50%);
+        display: inline-flex;
+        background-color: transparent;
+        justify-content: center;
+
+    }
+</style>
+<body bgcolor="black">
+    <div id="selection">
+
+    
+    <select id="order_food" value="Mac_Donalds" style="width: 500px;">
+        <option id="Mcdonalds" value="Mcdonalds">MCDonald's</option>
+        <option id="burger" value="Burger">Burger</option>
+        <option id="Coffee" value="Coffee">Coffee</option>
+        <option id="Chicken" value="Chicken">Chicken</option>
+    </select>
+    <button onclick="order_food()" style="width: 300px;">Place Order</button>
+</div>
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+
+
+<script src="index.js">
+
+</script>
