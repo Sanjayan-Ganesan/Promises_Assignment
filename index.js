@@ -16,20 +16,22 @@ let promise = new Promise(function(resolve,reject){
 
     if(status == true){
         resolve(`Restaruant is Open and Place your Order`);
-        append_data();
+        
     }else{
         reject(`Sorry the Restaurant is Closed`);
-        append_nodata();
+        
     }
 
 });
     
 
 promise.then(function(res){
+    append_data();
     console.log(`res:`,res);
 });
 
 promise.catch(function(err){
+    append_nodata();
     console.log(`err:`,err);
 });
    
